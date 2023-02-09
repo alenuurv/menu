@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+}
+
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom:50px;
+}
+
+.nav-item {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item:hover {
+    color: red;
+}
+
+.num {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.num:hover {
+    color: red;
+}
+
+.phone-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: #D2691E;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+    transition: background-color 0.3s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button:hover {
+    background-color: #A0522D;
+}
+
+.pop_up {
+    display: none;   
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(82, 58, 40, 0.8);
+    z-index: 2;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body {
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+
+.pop_up_body p {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding:17px 20px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+
+.pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* начало моих мучений */
+
+.menubar {
+    background-image: url(barbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160vh;
+}
+
+.bar-title {
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    padding-top: 98px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.bar-item1 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    text-align: center;
+    width: 25%;
+    margin-top: 80px;
+    margin-left: 15px;
+}
+
+.bar-text {
+    font-family: 'Tinos', serif; 
+    font-size: 26px;
+    margin-top: 80px;
+    padding-top: 290px;
+    margin: center;
+}
+
+.bar-img {
+    position: absolute;
+    width: 160px;
+    height: 240px;
+    left: 130px;
+    margin-top: 30px;
+}
+
+.bar-subtext {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bar-item2 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    width: 25%;
+    margin-left: 570px;
+    margin-top: -380px;
+    justify-content: center;
+}
+
+.bar-text2 {
+    font-family: 'Tinos', serif; 
+    font-size: 26px;
+    padding-top: 293px;
+    text-align: center;
+}
+
+.bar-img2 {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    left: 703px;
+    top: 480px;
+}
+
+.bar-subtext2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 2px;
+    /* margin-top: 200px; */
+    text-align: center;
+}
+
+.bar-item3 {
+    background-color: rgb(255, 255, 255);
+    height: 390px;
+    text-align: center;
+    width: 25%;
+    margin-left: 1128px;
+    margin-top: -620px;
+    justify-content: center;
+}
+
+.bar-text3 {
+    font-family: 'Tinos', serif; 
+    font-size: 26px;
+    padding-top: 300px;
+    margin-top: 245px;
+    margin: center;
+    text-align: center;
+}
+
+.bar-img3 {
+    position: absolute;
+    width: 160px;
+    height: 240px;
+    left: 1245px;
+    top: 465px;
+}
+
+.bar-subtext3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    /* padding-top: 100px; */
+    padding-top:2px;
+}
+
+.bar-item4 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    text-align: center;
+    width: 25%;
+    margin-left: 15px;
+    margin-top: -100px;
+}
+
+.bar-img4 {
+    position:absolute;
+    width: 140px;
+    height: 220px;
+    left: 125px;
+    padding-top: 55px;
+}
+
+.bar-text4 {
+    position:absolute;
+    font-family: 'Tinos', serif; 
+    font-size: 26px;
+    margin-top: 300px; 
+    margin-left: 100px;
+}
+
+.bar-subtext4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 230px;
+    padding-top: 330px;
+    text-align: center;
+}
+
+
+.bar-item5 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    text-align: center;
+    width: 25%;
+    margin-left: 570px;
+    margin-top: -590px;
+}
+
+.bar-img5 {
+    position:absolute;
+    width: 150px;
+    height: 230px;
+    left: 670px;
+    padding-top: 40px;
+}
+
+.bar-text5 {
+    position:absolute;
+    font-family: 'Tinos', serif; 
+    font-size: 26px;
+    margin-top: 290px; 
+    margin-left: 150px;
+}
+
+.bar-subtext5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 218px;
+    padding-top: 318px;
+}
+
+
+.bar-item6 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    text-align: center;
+    width: 25%;
+    margin-left: 1128px;
+    margin-top: -588px;
+}
+
+.bar-img6 {
+    position:absolute;
+    width: 185px;
+    height: 265px;
+    left: 1240px;
+    padding-top: 30px;
+}
+
+.bar-text6 {
+    position:absolute;
+    font-family: 'Tinos', serif; 
+    font-size: 26px;
+    margin-top: 290px; 
+    margin-left: 65px;
+}
+
+.bar-subtext6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 210px;
+    padding-top: 320px;
+    text-align: center;
+}
+
